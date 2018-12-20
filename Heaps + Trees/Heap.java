@@ -1,9 +1,15 @@
 
 public class Heap<E> implements HeapI<E> {
 	
-	int lastposition = 0;
-	int heapSize = 50;
-	E[] arr = (E[]) new Object[heapSize];
+	int lastposition;
+	int heapSize;
+	E[] arr;
+	
+	public Heap(int heapSize) { // Constructor
+		this.lastposition = 0;
+		this.heapSize = heapSize;
+		this.arr = (E[]) new Object[heapSize];
+	}
 	
 	// Add element to last position, then trickle up
 	public void add(E obj) {
