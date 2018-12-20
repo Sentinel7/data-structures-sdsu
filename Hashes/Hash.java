@@ -23,13 +23,13 @@ public class Hash<K, V> implements HashI<K, V> {
 	public Hash(int tableSize) { //Constuctor
 
 		this.tableSize = tableSize;
-		hArr = (LinkedList<HashElement<K, V>>[]) new LinkedList[tableSize];
+		this.hArr = (LinkedList<HashElement<K, V>>[]) new LinkedList[tableSize];
 
 		for (int i = 0; i < tableSize; i++)
-			hArr[i] = new LinkedList<HashElement<K, V>>();
+			this.hArr[i] = new LinkedList<HashElement<K, V>>();
 
-		maxLoadFactor = 0.75;
-		numElements = 0;
+		this.maxLoadFactor = 0.75;
+		this.numElements = 0;
 	}
 
 	// This function adds elements to the hash.
