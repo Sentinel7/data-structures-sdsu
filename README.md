@@ -1,1 +1,1 @@
-# ds-algorithms-sdsu
+# ds-algorithms
